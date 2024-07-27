@@ -1,5 +1,10 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
 import NavBar from "./components/NavBar";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import Skills from "./components/Skills";
 
 export default function App() {
   return (
@@ -11,6 +16,11 @@ export default function App() {
       <div className="container mx-auto px-4 md:px-8 lg:px-12">
         <NavBar />
         <About />
+        <Skills />
+        <Experience />
+        <Education />
+        <Contact />
+        <ScrollToTopButton />
       </div>
     </div>
   );

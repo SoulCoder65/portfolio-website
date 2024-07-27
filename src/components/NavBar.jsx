@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { GoCodeReview } from "react-icons/go";
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink, animateScroll } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,10 +9,7 @@ const Navbar = () => {
   const handleToggle = () => setIsOpen(!isOpen);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    animateScroll.scrollToTop();
   };
 
   return (
@@ -71,23 +68,28 @@ const Navbar = () => {
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-700 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-            {["About", "Skills", "Experience", "Education", "Contact"].map(
-              (item, index) => (
-                <li key={index}>
-                  <ScrollLink
-                    to={item.toLowerCase()}
-                    smooth={true}
-                    duration={500}
-                    href={`#${item.toLowerCase()}`}
-                    className="block py-2 px-3 text-neutral-300 rounded hover:bg-neutral-700 md:hover:bg-transparent md:hover:text-cyan-600 md:p-0"
-                    aria-current={item}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item}
-                  </ScrollLink>
-                </li>
-              ),
-            )}
+            {[
+              "About",
+              "Skills",
+              "Experience",
+              "Education",
+              "Projects",
+              "Contact",
+            ].map((item, index) => (
+              <li key={index}>
+                <ScrollLink
+                  to={item.toLowerCase()}
+                  smooth={true}
+                  duration={500}
+                  href={`#${item.toLowerCase()}`}
+                  className="block py-2 px-3 text-neutral-300 rounded hover:bg-neutral-700 md:hover:bg-transparent md:hover:text-cyan-600 md:p-0"
+                  aria-current={item}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item}
+                </ScrollLink>
+              </li>
+            ))}
           </ul>
         </motion.div>
       </motion.div>

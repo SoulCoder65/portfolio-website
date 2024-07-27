@@ -1,8 +1,9 @@
-import { HERO_CONTENT } from "../constants/content";
-import profilePic from "../../assets/AkshaySaxenaProfile.jpg";
+import { ABOUT_CONTENT } from "../constants/content";
+import profilePic from "../../assets/images/akshay-saxena-profile.jpg";
 import { Typewriter } from "react-simple-typewriter";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
+import { FaDownload } from "react-icons/fa";
 
 const animatedContainer = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -39,7 +40,7 @@ const About = () => {
                   words={["Full Stack Developer", "Mobile App Developer"]}
                   loop={0}
                   cursor
-                  cursorStyle="_"
+                  cursorStyle=""
                   typeSpeed={100}
                   deleteSpeed={50}
                   delaySpeed={1000}
@@ -50,10 +51,21 @@ const About = () => {
               variants={animatedContainer(1)}
               initial="hidden"
               animate="visible"
-              className="my-4 max-w-xl py-6 font-light tracking-wide text-center lg:text-left text-lg lg:text-lg text-neutral-300 leading-relaxed"
+              className="max-w-xl py-6 font-light tracking-wide text-center lg:text-left text-lg lg:text-lg text-neutral-300 leading-relaxed"
             >
-              {HERO_CONTENT}
+              {ABOUT_CONTENT}
             </motion.p>
+            <motion.a
+              href="/assets/pdf/resume.pdf"
+              download="Akshay_Saxena_SDE_Resume.pdf"
+              className="inline-flex my-6 items-center mt-6 px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow-md hover:bg-cyan-700 transition-all duration-300"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5 }}
+            >
+              <FaDownload className="mr-2 text-lg" /> {/* Download Icon */}
+              Download Resume
+            </motion.a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8 flex justify-center lg:justify-end">
