@@ -1,3 +1,4 @@
+import About from "./components/About";
 import NavBar from "./components/NavBar";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
 
       <div className="container mx-auto px-4 md:px-8 lg:px-12">
         <NavBar />
+        <About />
       </div>
     </div>
   );

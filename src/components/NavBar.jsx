@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GoCodeReview } from "react-icons/go";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,11 +16,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="mb-20 py-6">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
         className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4"
       >
         <div
@@ -70,24 +71,23 @@ const Navbar = () => {
           transition={{ duration: 0.4, ease: "easeOut" }}
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-neutral-700 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-            {[
-              "Home",
-              "About",
-              "Skills",
-              "Experience",
-              "Education",
-              "Contact",
-            ].map((item, index) => (
-              <li key={index}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  className="block py-2 px-3 text-neutral-300 rounded hover:bg-neutral-700 md:hover:bg-transparent md:hover:text-cyan-600 md:p-0"
-                  aria-current={item === "Home" ? "page" : undefined}
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
+            {["About", "Skills", "Experience", "Education", "Contact"].map(
+              (item, index) => (
+                <li key={index}>
+                  <ScrollLink
+                    to={item.toLowerCase()}
+                    smooth={true}
+                    duration={500}
+                    href={`#${item.toLowerCase()}`}
+                    className="block py-2 px-3 text-neutral-300 rounded hover:bg-neutral-700 md:hover:bg-transparent md:hover:text-cyan-600 md:p-0"
+                    aria-current={item === "Home" ? "page" : undefined}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item}
+                  </ScrollLink>
+                </li>
+              ),
+            )}
           </ul>
         </motion.div>
       </motion.div>
