@@ -80,7 +80,7 @@ const Navbar = () => {
                     duration={500}
                     href={`#${item.toLowerCase()}`}
                     className="block py-2 px-3 text-neutral-300 rounded hover:bg-neutral-700 md:hover:bg-transparent md:hover:text-cyan-600 md:p-0"
-                    aria-current={item === "Home" ? "page" : undefined}
+                    aria-current={item}
                     onClick={() => setIsOpen(false)}
                   >
                     {item}
