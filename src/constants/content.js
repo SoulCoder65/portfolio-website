@@ -1,38 +1,67 @@
+import html5Icon from "/assets/icons/frontend/html5.svg";
+import css3Icon from "/assets/icons/frontend/css3.svg";
+import jsIcon from "/assets/icons/frontend/js.svg";
+import reactIcon from "/assets/icons/frontend/react.svg";
+import reduxIcon from "/assets/icons/frontend/redux.svg";
+import bootstrapIcon from "/assets/icons/frontend/bootstrap.svg";
+import materialUiIcon from "/assets/icons/frontend/material-ui.svg";
+import tailwindCssIcon from "/assets/icons/frontend/tailwind-css.svg";
+
+import pythonIcon from "/assets/icons/backend/python.svg";
+import djangoIcon from "/assets/icons/backend/django.svg";
+import nodejsIcon from "/assets/icons/backend/nodejs.svg";
+import mysqlIcon from "/assets/icons/backend/mysql.svg";
+import postgresqlIcon from "/assets/icons/backend/postgresql.svg";
+import mongodbIcon from "/assets/icons/backend/mongodb.svg";
+
+import flutterIcon from "/assets/icons/mobile/flutter.svg";
+import reactNativeIcon from "/assets/icons/mobile/react-native.svg";
+import androidStudioIcon from "/assets/icons/mobile/android-studio.svg";
+import xcodeIcon from "/assets/icons/mobile/xcode.svg";
+
+import gitIcon from "/assets/icons/others/git.svg";
+import githubIcon from "/assets/icons/others/github.svg";
+import awsIcon from "/assets/icons/others/aws.svg";
+import firebaseIcon from "/assets/icons/others/firebase.svg";
+import dockerIcon from "/assets/icons/others/docker.svg";
+import postmanIcon from "/assets/icons/others/postman.png";
+import terraformIcon from "/assets/icons/others/terraform.svg";
+
 export const ABOUT_CONTENT = `Motivated and experienced Full Stack Developer with 2.5 years of hands-on experience. Certified in AWS, with expertise in Serverless, Python/Django, MERN, React Native, Flutter, MySQL, and Firebase. Proven track record of successfully delivering projects for clients and in-house initiatives. Skilled in handling offshore projects and developing internal tools.`;
 
 export const TECHNOLOGIES = {
   Frontend: [
-    { icon: "/assets/icons/frontend/html5.svg", name: "HTML5" },
-    { icon: "/assets/icons/frontend/css3.svg", name: "CSS3" },
-    { icon: "/assets/icons/frontend/js.svg", name: "JavaScript" },
-    { icon: "/assets/icons/frontend/react.svg", name: "React" },
-    { icon: "/assets/icons/frontend/redux.svg", name: "Redux" },
-    { icon: "/assets/icons/frontend/bootstrap.svg", name: "BootStrap" },
-    { icon: "/assets/icons/frontend/material-ui.svg", name: "Material UI" },
-    { icon: "/assets/icons/frontend/tailwind-css.svg", name: "Tailwind CSS" },
+    { icon: html5Icon, name: "HTML5" },
+    { icon: css3Icon, name: "CSS3" },
+    { icon: jsIcon, name: "JavaScript" },
+    { icon: reactIcon, name: "React" },
+    { icon: reduxIcon, name: "Redux" },
+    { icon: bootstrapIcon, name: "BootStrap" },
+    { icon: materialUiIcon, name: "Material UI" },
+    { icon: tailwindCssIcon, name: "Tailwind CSS" },
   ],
   Backend: [
-    { icon: "/assets/icons/backend/python.svg", name: "Python" },
-    { icon: "/assets/icons/backend/django.svg", name: "Django" },
-    { icon: "/assets/icons/backend/nodejs.svg", name: "NodeJS" },
-    { icon: "/assets/icons/backend/mysql.svg", name: "MySQL" },
-    { icon: "/assets/icons/backend/postgresql.svg", name: "PostgreSQL" },
-    { icon: "/assets/icons/backend/mongodb.svg", name: "MongoDB" },
+    { icon: pythonIcon, name: "Python" },
+    { icon: djangoIcon, name: "Django" },
+    { icon: nodejsIcon, name: "NodeJS" },
+    { icon: mysqlIcon, name: "MySQL" },
+    { icon: postgresqlIcon, name: "PostgreSQL" },
+    { icon: mongodbIcon, name: "MongoDB" },
   ],
   Mobile: [
-    { icon: "/assets/icons/mobile/flutter.svg", name: "Flutter" },
-    { icon: "/assets/icons/mobile/react-native.svg", name: "React Native" },
-    { icon: "/assets/icons/mobile/android-studio.svg", name: "Android Studio" },
-    { icon: "/assets/icons/mobile/xcode.svg", name: "Xcode" },
+    { icon: flutterIcon, name: "Flutter" },
+    { icon: reactNativeIcon, name: "React Native" },
+    { icon: androidStudioIcon, name: "Android Studio" },
+    { icon: xcodeIcon, name: "Xcode" },
   ],
   Others: [
-    { icon: "/assets/git.svg", name: "Git" },
-    { icon: "/assets/github.svg", name: "GitHub" },
-    { icon: "/assets/aws.svg", name: "AWS" },
-    { icon: "/assets/firebase.svg", name: "Firebase" },
-    { icon: "/assets/docker.svg", name: "Docker" },
-    { icon: "/assets/postman.png", name: "Postman" },
-    { icon: "/assets/terraform.svg", name: "Terraform" },
+    { icon: gitIcon, name: "Git" },
+    { icon: githubIcon, name: "GitHub" },
+    { icon: awsIcon, name: "AWS" },
+    { icon: firebaseIcon, name: "Firebase" },
+    { icon: dockerIcon, name: "Docker" },
+    { icon: postmanIcon, name: "Postman" },
+    { icon: terraformIcon, name: "Terraform" },
   ],
 };
 
