@@ -1,9 +1,4 @@
-// import project1 from "../assets/projects/project-1.jpg";
-// import project2 from "../assets/projects/project-2.jpg";
-// import project3 from "../assets/projects/project-3.jpg";
-// import project4 from "../assets/projects/project-4.jpg";
-
-export const ABOUT_CONTENT = `Motivated and experienced Full Stack Developer with 2.5 years of hands-on experience. Certified in AWS, with expertise in Serverless, Python/Django, MERN, React Native, Flutter, NestJS, MySQL, and Firebase. Proven track record of successfully delivering projects for clients and in-house initiatives. Skilled in handling offshore projects and developing internal tools.`;
+export const ABOUT_CONTENT = `Motivated and experienced Full Stack Developer with 2.5 years of hands-on experience. Certified in AWS, with expertise in Serverless, Python/Django, MERN, React Native, Flutter, MySQL, and Firebase. Proven track record of successfully delivering projects for clients and in-house initiatives. Skilled in handling offshore projects and developing internal tools.`;
 
 export const TECHNOLOGIES = {
   Frontend: [
@@ -62,7 +57,7 @@ export const EXPERIENCES = [
   },
   {
     year: "Mar 2021 - Dec 2021",
-    role: "Mobile Application Developer Intern",
+    role: "Mobile Application Intern",
     company: "Hope Foundation",
     description: `I managed both back-end and front-end development, creating an Android app with Flutter and a Node.js backend with a React.js admin panel. I used MongoDB for database management and integrated Firebase for notifications and file handling. Payment processing was handled through PayU Money, and I designed a QR code-based queue management system. I also integrated Cowin APIs for vaccination registration and Mobikwik API for mobile recharge, bill payments, and e-wallet functionality.`,
     technologies: [
@@ -76,7 +71,7 @@ export const EXPERIENCES = [
   },
   {
     year: "May 2020 - Jun 2020",
-    role: "Python Django Developer Intern",
+    role: "Python Django Intern",
     company: "Universal Informatics",
     description: `I learned core and advanced Python OOP concepts and worked on mini projects to deepen my understanding. I studied Django's architecture, including MVT and DTL, and created a mini website using Django along with HTML, CSS, and JavaScript.`,
     technologies: ["Core Python", "Advance Python", "Django", "MVT", "DTL"],
@@ -119,36 +114,66 @@ export const EDUCATION = [
     level: "high-school",
   },
 ];
-// export const PROJECTS = [
-//   {
-//     title: "E-Commerce Website",
-//     image: project1,
-//     description:
-//       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-//     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-//   },
-//   {
-//     title: "Task Management App",
-//     image: project2,
-//     description:
-//       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-//     technologies: ["HTML", "CSS", "Angular", "Firebase"],
-//   },
-//   {
-//     title: "Portfolio Website",
-//     image: project3,
-//     description:
-//       "A personal portfolio website showcasing projects, skills, and contact information.",
-//     technologies: ["HTML", "CSS", "React", "Bootstrap"],
-//   },
-//   {
-//     title: "Blogging Platform",
-//     image: project4,
-//     description:
-//       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-//     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-//   },
-// ];
+
+export const PROJECTS = [
+  {
+    title: "QPie",
+    description:
+      "Developed a mobile-based queue management system to support service providers and businesses. The system includes an admin panel and an Android app. It manages databases, sends notifications, and handles payment processing. The system features a token-based queue management system with QR codes, integrates Cowin APIs for vaccination registration, and supports mobile recharge, bill payments, and e-wallet functionality.",
+    technologies: [
+      "Dart",
+      "Flutter",
+      "Node",
+      "React",
+      "ExpressJS",
+      "Mongodb",
+      "Firebase",
+    ],
+    githubLink: "https://apkcombo.com/qpie/com.qpie.getyourtoken/",
+  },
+  {
+    title: "Meal App",
+    description:
+      'Developed a meal app using Flutter featuring a beautiful and simple UI. Users can search for meals across various categories and apply filters such as "Only Vegetarian." The app allows users to mark dishes as favorites and provides detailed descriptions, including ingredients and cooking procedures.',
+    technologies: ["Dart", "Flutter"],
+    githubLink: "https://github.com/SoulCoder65/mealapp",
+  },
+  {
+    title: "Twitter-Bot",
+    description:
+      "Created a Twitter bot using the Tweepy API and Tkinter. The bot can read tweets, write tweets, check followers and following, update profiles, search users, manage blocked users, and search trends.",
+    technologies: ["Python", "Tweepy API", "Tkinter"],
+    githubLink: "https://github.com/SoulCoder65/Twitter-Bot",
+  },
+  {
+    title: "Cric Show",
+    description:
+      "Created a React JS cricket score web application that displays current match results, scores, player stats, and recent matches using the Cric API.",
+    technologies: ["ReactJS", "Bootstrap", "Cric API"],
+    githubLink: "https://github.com/SoulCoder65/CricShow",
+  },
+  {
+    title: "Instagram Bot",
+    description:
+      "Created an Instagram bot using Tkinter and Selenium WebDriver. The bot can count the number of posts, followers, and following for any user or page, provide lists of followers and following, and like posts based on hashtags, pages, or specific users.",
+    technologies: ["Python", "Selenium", "TKinter"],
+    githubLink: "https://github.com/SoulCoder65/Instagram-Bot",
+  },
+  {
+    title: "Bill Management System",
+    description:
+      "Developed a Bill Management System using Tkinter (Python) for shopkeepers to calculate item prices including GST and generate bills. The system also allows saving bills as text files and searching for them using bill numbers.",
+    technologies: ["Python", "TKinter"],
+    githubLink: "https://github.com/SoulCoder65/Bill-Management-System",
+  },
+  {
+    title: "Github Search",
+    description:
+      "Created a GitHub stats website using the GitHub API to search for user information, including stats, followers, following, gists, profile details, programming languages used, repositories, and forked repos. Data is presented in charts and graph formats using React JS and React FusionCharts.",
+    technologies: ["ReactJS"],
+    githubLink: "https://github.com/SoulCoder65/githubsearch",
+  },
+];
 
 export const CONTACT = {
   phoneNo: "+91 8770754528",

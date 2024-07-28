@@ -31,8 +31,8 @@ const Navbar = () => {
           >
             <GoCodeReview />
           </motion.div>
-          <span className="self-center text-2xl font-semibold text-neutral-300 md:text-3xl">
-            Akshay Saxena
+          <span className="self-center text-base font-semibold text-neutral-300 md:text-2xl">
+            Akshay | Full Stack Dev
           </span>
         </div>
         <button
@@ -74,6 +74,7 @@ const Navbar = () => {
               "Experience",
               "Education",
               "Projects",
+              // "Achievments",
               "Contact",
             ].map((item, index) => (
               <li key={index}>

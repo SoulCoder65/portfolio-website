@@ -10,7 +10,7 @@ const Education = () => {
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="my-10 text-center text-4xl font-semibold "
+        className="my-10 text-center text-4xl font-semibold"
       >
         Education
       </motion.h1>
@@ -25,7 +25,7 @@ const Education = () => {
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.3 }}
+                transition={{ duration: 0.3, delay: index * 0.09 }}
                 className="flex items-center space-x-4 bg-gray-800 p-6 rounded-lg shadow-lg relative z-10"
               >
                 <div className="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-indigo-600 text-white absolute -left-6">
