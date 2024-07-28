@@ -4,6 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
+import ResumePDF from "/assets/pdf/resume.pdf";
 
 const animatedContainer = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -56,7 +57,7 @@ const About = () => {
               {ABOUT_CONTENT}
             </motion.p>
             <motion.a
-              href="/assets/pdf/resume.pdf"
+              href={ResumePDF}
               download="Akshay_Saxena_SDE_Resume.pdf"
               className="inline-flex my-6 items-center mt-6 px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow-md hover:bg-cyan-700 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
