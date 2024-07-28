@@ -26,13 +26,13 @@ export const TECHNOLOGIES = {
     { icon: "/assets/icons/mobile/xcode.svg", name: "Xcode" },
   ],
   Others: [
-    { icon: "/assets/icons/others/git.svg", name: "Git" },
-    { icon: "/assets/icons/others/github.svg", name: "GitHub" },
-    { icon: "/assets/icons/others/aws.svg", name: "AWS" },
-    { icon: "/assets/icons/others/firebase.svg", name: "Firebase" },
-    { icon: "/assets/icons/others/docker.svg", name: "Docker" },
-    { icon: "/assets/icons/others/postman.png", name: "Postman" },
-    { icon: "/assets/icons/others/terraform.svg", name: "Terraform" },
+    { icon: "/assets/icons/git.svg", name: "Git" },
+    { icon: "/assets/icons/github.svg", name: "GitHub" },
+    { icon: "/assets/icons/aws.svg", name: "AWS" },
+    { icon: "/assets/icons/firebase.svg", name: "Firebase" },
+    { icon: "/assets/icons/docker.svg", name: "Docker" },
+    { icon: "/assets/icons/postman.png", name: "Postman" },
+    { icon: "/assets/icons/terraform.svg", name: "Terraform" },
   ],
 };
 
