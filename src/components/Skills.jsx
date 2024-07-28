@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { TECHNOLOGIES } from "../constants/content";
 
 // TechCard Component
-const TechCard = ({ icon, name }) => (
+const TechCard = ({ name }) => (
   <motion.div
     initial={{ opacity: 0.8, scale: 0.95, y: 50 }}
     whileInView={{ opacity: 1, scale: 1, y: 0.5 }}
@@ -12,7 +12,7 @@ const TechCard = ({ icon, name }) => (
     transition={{ duration: 0.5 }}
     className="flex flex-col items-center justify-center p-4 bg-neutral-800 rounded-lg shadow-md border border-neutral-700"
   >
-    <img src={icon} alt={name} className="w-12 h-12 mb-2" />
+    <img src="../../assets/aws.svg" alt={name} className="w-12 h-12 mb-2" />
     <span className="text-neutral-200 text-sm text-center">{name}</span>
   </motion.div>
 );
