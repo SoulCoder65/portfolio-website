@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Certification from "./components/Certification";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -20,6 +21,7 @@ export default function App() {
         <Experience />
         <Education />
         <Projects />
+        <Certification />
         <Contact />
         <ScrollToTopButton />
       </div>

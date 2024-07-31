@@ -27,6 +27,10 @@ import dockerIcon from "/assets/icons/others/docker.svg";
 import postmanIcon from "/assets/icons/others/postman.png";
 import terraformIcon from "/assets/icons/others/terraform.svg";
 
+import awsProfessionalBadge from "/assets/images/aws-professional-badge.png";
+import awsDeveloperBadge from "/assets/images/aws-developer-badge.png";
+import awsSolutionBadge from "/assets/images/aws-solutions-badge.png";
+
 export const ABOUT_CONTENT = `Motivated and experienced Full Stack Developer with 2.5 years of hands-on experience. Certified in AWS, with expertise in Serverless, Python/Django, MERN, React Native, Flutter, MySQL, and Firebase. Proven track record of successfully delivering projects for clients and in-house initiatives. Skilled in handling offshore projects and developing internal tools.`;
 
 export const TECHNOLOGIES = {
@@ -201,6 +205,30 @@ export const PROJECTS = [
       "Created a GitHub stats website using the GitHub API to search for user information, including stats, followers, following, gists, profile details, programming languages used, repositories, and forked repos. Data is presented in charts and graph formats using React JS and React FusionCharts.",
     technologies: ["ReactJS"],
     githubLink: "https://github.com/SoulCoder65/githubsearch",
+  },
+];
+
+export const CERTIFICATIONS = [
+  {
+    title: "AWS Certified Solutions Architect – Professional",
+    issuer: "Amazon Web Services Training and Certification",
+    date: "April 2024",
+    link: "https://www.credly.com/badges/00c91b85-4948-4275-88c3-d143e0e888e7/public_url",
+    badge: awsProfessionalBadge,
+  },
+  {
+    title: "AWS Certified Developer – &nbsp;&nbsp;&nbsp;Associate",
+    issuer: "Amazon Web Services Training and Certification",
+    date: "Nov 2023",
+    link: "https://www.credly.com/badges/8e7b5ea8-0ab4-40ca-b77a-6cc81aed5213/public_url",
+    badge: awsDeveloperBadge,
+  },
+  {
+    title: "AWS Certified Solutions Architect – Associate",
+    issuer: "Amazon Web Services Training and Certification",
+    date: "May 2023",
+    link: "https://www.credly.com/badges/c356f476-c70b-4bd3-8af8-131497d7bb3a/public_url",
+    badge: awsSolutionBadge,
   },
 ];
 

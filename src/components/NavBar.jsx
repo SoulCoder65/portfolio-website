@@ -18,10 +18,10 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-        className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4"
+        className="max-w-screen-xl flex flex-wrap items-center justify-between p-4"
       >
         <div
-          className="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer"
+          className="flex items-start space-x-3 rtl:space-x-reverse cursor-pointer"
           onClick={scrollToTop}
         >
           <motion.div
@@ -74,7 +74,7 @@ const Navbar = () => {
               "Experience",
               "Education",
               "Projects",
-              // "Achievments",
+              "Certifications",
               "Contact",
             ].map((item, index) => (
               <li key={index}>

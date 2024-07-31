@@ -18,14 +18,14 @@ const animatedContainer = (delay) => ({
 const About = () => {
   return (
     <Element name="about" className="border-b border-neutral-900 pb-4 lg:mb-5">
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2 px-4 lg:px-8">
+      <div className="flex flex-wrap justify-center lg:justify-between">
+        <div className="w-full lg:w-1/2 px-4">
           <div className="flex flex-col items-center lg:items-start">
             <motion.h1
               variants={animatedContainer(0)}
               initial="hidden"
               animate="visible"
-              className="pb-8 text-4xl font-thin tracking-tight mt-8 lg:mt-16 lg:text-6xl"
+              className="pb-8 text-4xl font-thin tracking-tight mt-8 lg:mt-16 lg:text-5xl"
             >
               Akshay Saxena
             </motion.h1>
@@ -33,7 +33,7 @@ const About = () => {
               variants={animatedContainer(0.5)}
               initial="hidden"
               animate="visible"
-              className="text-2xl lg:text-4xl font-light tracking-tight text-center lg:text-left"
+              className="text-2xl lg:text-3xl font-light tracking-tight text-center lg:text-left"
             >
               <span className="text-white">I am a </span>
               <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-indigo-600 bg-clip-text text-transparent font-normal">
@@ -52,7 +52,7 @@ const About = () => {
               variants={animatedContainer(1)}
               initial="hidden"
               animate="visible"
-              className="max-w-xl py-6 font-light tracking-wide text-center lg:text-left text-lg lg:text-lg text-neutral-300 leading-relaxed"
+              className="max-w-xl py-6 font-light tracking-wide text-center lg:text-left text-base lg:text-lg text-neutral-300 leading-relaxed"
             >
               {ABOUT_CONTENT}
             </motion.p>
