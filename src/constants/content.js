@@ -30,6 +30,7 @@ import terraformIcon from "/assets/icons/others/terraform.svg";
 import awsProfessionalBadge from "/assets/images/aws-professional-badge.png";
 import awsDeveloperBadge from "/assets/images/aws-developer-badge.png";
 import awsSolutionBadge from "/assets/images/aws-solutions-badge.png";
+import terraformBadge from "/assets/images/terraform-associate-badge.png";
 
 export const ABOUT_CONTENT = `Motivated and experienced Full Stack Developer with 2.5 years of hands-on experience. Certified in AWS, with expertise in Serverless, Python/Django, MERN, React Native, Flutter, MySQL, and Firebase. Proven track record of successfully delivering projects for clients and in-house initiatives. Skilled in handling offshore projects and developing internal tools.`;
 
@@ -229,6 +230,13 @@ export const CERTIFICATIONS = [
     date: "May 2023",
     link: "https://www.credly.com/badges/c356f476-c70b-4bd3-8af8-131497d7bb3a/public_url",
     badge: awsSolutionBadge,
+  },
+  {
+    title: "HashiCorp Certified: Terraform Associate",
+    issuer: "HashiCorp",
+    date: "Jan 2025",
+    link: "https://www.credly.com/badges/45a9c170-5f5c-44f5-abc6-39084c098107/public_url",
+    badge: terraformBadge,
   },
 ];
 
